@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>title</title>
+    <!--css can be done inline, internal, and external-->
+    <!--link to external css file-->
+    <link rel="stylesheet" href="style.css">
+    <!--meta tells web browser what this webpage is about-->
+    <!--UTF-8 for unicode-->
+    <meta charset="UTF-8">
+    <meta name="description" content="html notes">
+    <meta name="keywords" content="html, website">
+    <!--set to device dimensions-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--refresh every x seconds-->
+    <meta http-equiv="refresh" content="10000">
+    <!--internal css-->
+    <style>
+        body
+        {
+            background-color: lightgray;
+            color: rgb(199, 0, 126);
+        }
+    </style>
+    <!--same for h1, p, etc.-->
+</head>
+<body>
+    <!--comment-->
+    <!--style="" for inline css properties, same for body, p, etc-->
+    <h1 style = "color:rgba(175, 35, 0, 0.859)">header 1</h1>
+    <hr> <!--horizontal rule-->
+    <h6 style = "background-color: #ffea70; color: #9e05f0">header 6</h6>
+    <br> <!--line break-->
+    <!--div for markup of division of document-->
+    <div style="background-color: lightblue;">
+    <!--"lorem" for sample text-->
+    <!--span for markup to section of text-->
+    <p>Lorem <span style="color:red">span</span> dolor sit amet consectetur adipisicing elit. Nisi reiciendis distinctio hic non. Blanditiis numquam reprehenderit eveniet, voluptatibus quae earum aspernatur minima soluta obcaecati quasi ipsam eius harum ullam unde!</p>
+    <!--_blank for new tab, self is same tab which is default-->
+    <!--title shows when hovering-->
+    <a href="https://www.google.com" target=_blank title="takes you to google">
+        Google
+    </a>
+    <a href="page2.html" target=_blank>
+        Page 2
+    </a>
+    </div>
+    <!--same for "mailto:hello@gmail.com"-->
+    <!--alt in case image doesn't show up-->
+    <a href="https://en.wikipedia.org/wiki/Mike_Wazowski">
+    <img src="mike.jpg" height = "200" width = "600" alt = "mike">
+    </a>
+    <audio controls muted loop src="woke up.mp3">
+        <source src="woke up.mp3">
+        <source src="woke up.mp3">
+        HTML audio not supported
+    </audio>
+    <video controls muted loop src="21 cars.mp4" width="500">
+        <source src="21 cars.mp4">
+        <source src="21 cars.mp4">
+        HTML video not supported
+    </video>
+        <p>
+            <b>bold</b>
+            <i>italic</i>
+            <b>big</b>
+            <small>small</small>
+            <sub>subscript</sub>
+            <sup>superscript</sup>
+            <ins>inserted</ins>
+            <del>deleted</del>
+            <mark>marked</mark>
+        </p>
+    <ul>
+        <li>unordered list</li>
+        <li>unordered list
+            <ol>
+                <li>one</li>
+                <li>two</li>
+            </ol>
+        </li>
+    </ul>
+    <ol type="A"> <!--default are numbers-->
+        <li>ordered list</li>
+        <li>ordered list</li>
+    </ol>
+    <dl>
+        <dt>description term</dt>
+        <dd>description definition</dd>
+        <dt>description term</dt>
+        <dd>description definition</dd>
+    </dl>
+    <table bgcolor="black" width="700">
+        <tr bgcolor="pink">
+            <th width="100">col 1 head</th>
+            <th width="100">col 2 head</th>
+        </tr>
+        <tr bgcolor="lime" align="center">
+            <td>col 1 row 1</td>
+            <td>col 2 row 1</td>
+        </tr>
+    </table>
+    <!--iframe embed content from other sources (files, links, etc)-->
+    <iframe style="border:0" src="page2.html" width="750" height="250"></iframe>
+    <a href="https://www.google.com">
+        <button onclick="doSomething()" style="background-color: #67b3ff;color:#0d4a0d;border-radius:5px;">button</button>
+        <p id="test">Hello</p>
+        <!--script for javascript for onclick-->
+        <script>
+            function doSomething()
+            {
+                document.getElementById("test").innerHTML = "Goodbye";
+            }
+        </script>
+    </a><!--php to store data, dont use get for private info, but for search boxes-->
+    <form action="action_page.php" method="GET">
+        <!--for should match id, name is variable for data-->
+        <label for="label">label</label>
+        <input type="text" id="label" name="label" placeholder="placeholder" required>
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" maxlength="12" required>
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" placeholder="hello@gmail.com">
+        <label for="phone">phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+        <label for="birthday">birthday</label>
+        <input type="date" id="birthday" name="birthday">
+        <label for="number">number</label>
+        <input type="number" id="number" name="number" min="0" max="99" value="1">
+        <!--button1 and 2 cannot both be selected because they're both under the same name-->
+        <label for="button1">button1</label>
+        <input type="radio" id="button1" name = "name" value="button1">
+        <label for="button2">button2</label>
+        <input type="radio" id="button2" name = "name" value="button2">
+        <label for="button3">button3</label>
+        <input type="radio" id="button3" value="button3">
+        <label for="dropdown">dropdown</label>
+        <select id="dropdown" name="payment">
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+        </select>
+        <label for="checkbox">checkbox</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
