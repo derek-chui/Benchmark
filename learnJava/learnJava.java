@@ -1,9 +1,10 @@
+package Personal.Learning.learnJava;
 // import java.util.Scanner;
 // import javax.swing.JOptionPane;
 import java.util.Random;
 import java.util.*;
 import java.util.ArrayList;
-import java.util.HashMap;
+// import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,7 +18,7 @@ import javax.sound.sampled.*;
 // import java.awt.*; 
 import java.io.*;
 
-import tools.toolBox;
+// import tools.toolBox;
 
 public class learnJava
 {
@@ -252,8 +253,8 @@ public class learnJava
         System.out.println(getFirst(charArr));
 
         //generic class similar to making array list
-        generic<Integer, Integer> myInt = new generic(12, 21);
-        System.out.println(myInt.getVal());
+        // generic<Integer, Integer> myInt = new generic(12, 21);
+        // System.out.println(myInt.getVal());
 
         // HashMap<Integer, String> users = new HashMap<>();
 
@@ -302,7 +303,6 @@ public class learnJava
         //             timer.cancel();
         //         }
         //         // System.out.print("done");
-        //         // TODO Auto-generated method stub
         //         // throw new UnsupportedOperationException("Unimplemented method 'run'");
         //     }  
         // };
@@ -337,11 +337,11 @@ public class learnJava
         //inherits priority so same as Thread
         //daemon thread: low priority, background like garbage collection
         //user thread (non daemon): terminates self when all user threads are done
-        myThread thread1 = new myThread();
+        // myThread thread1 = new myThread();
 
         //better option for extends
-        myRunnable runnable1 = new myRunnable();
-        Thread threadR = new Thread(runnable1);
+        // myRunnable runnable1 = new myRunnable();
+        // Thread threadR = new Thread(runnable1);
 
         // thread1.start();
         // thread1.join(3000); //wait x milliseconds before next one starts
@@ -349,7 +349,7 @@ public class learnJava
         //threads are independent so if one has an exception other still runs, unless they're daemon threads
 
         //packages
-        toolBox item = new toolBox();
+        // toolBox item = new toolBox();
 
         //can run on terminal by going to file then javac file.java
         //then java file
