@@ -1,10 +1,11 @@
+package Personal.Learning.learnJava;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.io.File;
+// import java.io.File;
 import java.awt.*;
 import javax.swing.*;
 // import javax.swing.event.*;
@@ -16,7 +17,7 @@ public class myFrame extends JFrame implements ActionListener, KeyListener, Mous
     JCheckBox checkBox;
     JRadioButton button1;
     JRadioButton button2;
-    JComboBox comboBox;
+    // JComboBox comboBox;
     JMenuBar menuBar;
     JMenu fileMenu;
     JMenu editMenu;
@@ -91,10 +92,10 @@ public class myFrame extends JFrame implements ActionListener, KeyListener, Mous
         //can also change button with image
 
         //must pass reference data types
-        String[] options = {"option 1", "option 2"};
-        comboBox = new JComboBox(options);
-        comboBox.addActionListener(this);
-        comboBox.setEditable(true);
+        // String[] options = {"option 1", "option 2"};
+        // comboBox = new JComboBox(options);
+        // comboBox.addActionListener(this);
+        // comboBox.setEditable(true);
         //getItemCount(), addItem("text"), insertItemAt("text", 2)
         //setSelectedIndex(0), .removeItem("text"), .removeItemAt(0), .removeAllItems()
 
