@@ -1,3 +1,4 @@
+package Personal.Projects.Benchmark.learnJava;
 public class myThread extends Thread
 {
     @Override
