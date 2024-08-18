@@ -1,3 +1,4 @@
+package Personal.Projects.Benchmark.learnJava;
 public class myRunnable implements Runnable
 {
     @Override
