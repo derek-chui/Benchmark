@@ -1,5 +1,4 @@
-package Personal.Learning.learnDSAA;
-
+package Personal.Projects.Benchmark.learnDSAA;
 public class node
 {
     char data;
