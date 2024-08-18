@@ -1,4 +1,4 @@
-package Personal.Learning.learnDSAA;
+package Personal.Projects.Benchmark.learnDSAA;
 
 public class binarySearchTree
 {
