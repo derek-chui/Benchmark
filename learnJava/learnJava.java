@@ -1,4 +1,4 @@
-package Personal.Learning.learnJava;
+package Personal.Projects.Benchmark.learnJava;
 // import java.util.Scanner;
 // import javax.swing.JOptionPane;
 import java.util.Random;
