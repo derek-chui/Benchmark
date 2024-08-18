@@ -1,3 +1,4 @@
+package Personal.Projects.Benchmark.learnJava;
 public class settings extends profile
 {
     public settings(String name, int friends)
