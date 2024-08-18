@@ -1,3 +1,4 @@
+package Personal.Projects.Benchmark.learnJava;
 import java.io.Serializable;
 
 public class profile implements Serializable
