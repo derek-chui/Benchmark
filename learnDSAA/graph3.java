@@ -1,4 +1,4 @@
-package Personal.Learning.learnDSAA;
+package Personal.Projects.Benchmark.learnDSAA;
 import java.util.*;
 
 public class graph3
