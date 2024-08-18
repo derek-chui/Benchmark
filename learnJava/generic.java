@@ -1,3 +1,4 @@
+package Personal.Projects.Benchmark.learnJava;
 public class generic <T extends Number, U extends Number>
 {
     //extends Number so can pass in anything within Number subclass
